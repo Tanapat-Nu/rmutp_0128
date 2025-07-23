@@ -1,5 +1,5 @@
 #API
-
+@password={$env PASSWORD}
 ### Getting all users
 GET http://localhost:8080/api/users
 
@@ -7,11 +7,10 @@ GET http://localhost:8080/api/users
 POST http://localhost:8080/api/auth/local/register
 Content-Type: application/json
 
-
 {
     
   "email": "tanapat-nu@rmutp.ac.th",
   "username": "tanapat",
-  "password": "tanapat01"
+  "password": "{{password}}"
    
 }
